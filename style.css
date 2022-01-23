@@ -1,0 +1,166 @@
+/* --------------------------------------
+Full Body Part
+--------------------------------------- */
+body {
+  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+}
+
+/* ------------------------
+Top Part
+--------------------------- */
+.company-name {
+  margin: 130px;
+}
+.flexiable-container {
+  display: flex;
+  background-color: lightcyan;
+}
+.decoration {
+  width: 50%;
+  padding-left: 10%;
+  margin-top: 10%;
+}
+.decoration img {
+  width: 100%;
+  height: 70%;
+}
+.button {
+  text-decoration: none;
+  background-image: linear-gradient(orange, tomato);
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+/* -------------------------------------
+Products
+---------------------------------------- */
+
+.products-header {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 40px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+  margin-left: 80px;
+}
+.product-details {
+  font-style: ;
+  background-color: lightcyan;
+}
+.shadow {
+  padding: 20px 20px;
+  box-shadow: 10px 10px 30px rgb(12, 4, 1);
+}
+.product-info {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: lightcyan;
+}
+.filled {
+  width: 12px;
+  height: 12px;
+  color: gold;
+}
+.more {
+  text-decoration: none;
+  margin-top: 20px;
+  margin-right: 40px;
+  text-align: right;
+}
+
+/* ------------------------------------
+All image hover transform-transition 
+--------------------------------------*/
+.images-transform-transition:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+/* --------------------------------------
+OFFER Part
+---------------------------------------- */
+a {
+  text-decoration: none;
+  color: black;
+}
+.offer {
+  display: flex;
+  justify-items: left;
+  margin-left: 10px;
+  background-color: lightcyan;
+}
+.offer img {
+  width: 400px;
+  height: 500px;
+  margin-top: 60px;
+  margin-right: 90px;
+  border: blanchedalmond;
+  border-radius: 50px;
+}
+.offer-details {
+  font-size: 150px;
+  margin-left: 90px;
+}
+span {
+  color: coral;
+}
+/*---------------------------
+ Footer 
+ -----------------------------*/
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  background-color: orange;
+}
+.footer-text {
+  color: black;
+  margin-bottom: 0%;
+}
+.social-icon img {
+  width: 25px;
+  height: 25px;
+  align-content: center;
+  margin-top: 10px;
+}
+
+/* ---------------
+Media Queries 
+------------------*/
+
+/* -----------
+Mobile
+-------------- */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .products,
+  .offers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product,
+  .offer {
+    flex-direction: column;
+  }
+}
+
+/* -----------
+Tablet
+-------------- */
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .products,
+  .offers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
